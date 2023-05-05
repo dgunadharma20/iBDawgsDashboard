@@ -1,15 +1,13 @@
 import { Box } from "@mui/material";
 import Header from "../../components/Header";
-import BarChart from "../../components/BarChart";
+import Plot from 'react-plotly.js';
+import graphData from '../../scripts/graph.json';
 
 const Bar = () => {
   return (
-    <Box m="20px">
-      <Header title="Bar Chart" subtitle="Simple Bar Chart" />
-      <Box height="75vh">
-        <BarChart />
-      </Box>
-    </Box>
+    <div>
+      <Plot data={graphData.data} layout={graphData.layout} />
+    </div>
   );
 };
 
