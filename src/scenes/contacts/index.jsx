@@ -1,9 +1,13 @@
 import { Box } from "@mui/material";
 import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import { tokens } from "../../theme";
-import { mockDataContacts } from "../../data/mockData";
+import mockDataContacts from "../../data/filt_data.json";
 import Header from "../../components/Header";
 import { useTheme } from "@mui/material";
+
+mockDataContacts.forEach((item, i) => {
+  item.id = i+1;
+})
 
 const Contacts = () => {
   const theme = useTheme();
@@ -11,43 +15,54 @@ const Contacts = () => {
 
   const columns = [
     { field: "id", headerName: "ID", flex: 0.5 },
-    { field: "registrarId", headerName: "Registrar ID" },
     {
-      field: "name",
-      headerName: "Name",
-      flex: 1,
-      cellClassName: "name-column--cell",
-    },
-    {
-      field: "age",
-      headerName: "Age",
-      type: "number",
-      headerAlign: "left",
-      align: "left",
-    },
-    {
-      field: "phone",
-      headerName: "Phone Number",
+      field: "Fwd_Packet_Length_Max",
+      headerName: "Fwd_Packet_Length_Max",
       flex: 1,
     },
     {
-      field: "email",
-      headerName: "Email",
+      field: "Init_Win_bytes_forward",
+      headerName: "Init_Win_bytes_forward",
       flex: 1,
     },
     {
-      field: "address",
-      headerName: "Address",
+      field: "Subflow_Fwd_Bytes",
+      headerName: "Subflow_Fwd_Bytes",
       flex: 1,
     },
     {
-      field: "city",
-      headerName: "City",
+      field: "Fwd_Packet_Length_Mean",
+      headerName: "Fwd_Packet_Length_Mean",
       flex: 1,
     },
     {
-      field: "zipCode",
-      headerName: "Zip Code",
+      field: "Subflow_Fwd_Packets",
+      headerName: "Subflow_Fwd_Packets",
+      flex: 1,
+    },
+    {
+      field: "Avg_Fwd_Segment_Size",
+      headerName: "Avg_Fwd_Segment_Size",
+      flex: 1,
+    },
+    {
+      field: "Destination_Port",
+      headerName: "Destination_Port",
+      flex: 1,
+    },
+    {
+      field: "Bwd_Packet_Length_Min",
+      headerName: "Bwd_Packet_Length_Min",
+      flex: 1,
+    },
+    {
+      field: "Total_Length_of_Fwd_Packets",
+      headerName: "Total_Length_of_Fwd_Packets",
+      flex: 1,
+    },
+    {
+      field: "act_data_pkt_fwd",
+      headerName: "act_data_pkt_fwd",
       flex: 1,
     },
   ];
@@ -55,8 +70,8 @@ const Contacts = () => {
   return (
     <Box m="20px">
       <Header
-        title="CONTACTS"
-        subtitle="List of Contacts for Future Reference"
+        title="Feature Selection"
+        subtitle="List of top 10 features"
       />
       <Box
         m="40px 0 0 0"
