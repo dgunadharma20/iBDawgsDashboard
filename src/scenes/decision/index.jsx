@@ -1,9 +1,9 @@
 import { Box } from "@mui/material";
 import Header from "../../components/Header";
 import Plot from 'react-plotly.js';
-import graphData from '../../scripts/graph.json';
+import graphData from '../../data/DecisionTree.json';
 
-const Bar = () => {
+const Decision = () => {
   return (
     <div>
       <Plot data={graphData.data} layout={graphData.layout} />
@@ -11,4 +11,4 @@ const Bar = () => {
   );
 };
 
-export default Bar;
+export default Decision;
