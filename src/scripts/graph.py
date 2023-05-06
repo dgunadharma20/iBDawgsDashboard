@@ -72,5 +72,5 @@ fig.update_layout(annotations=annotations)
 
 # Convert the figure to a JSON string and write to a file
 fig_json = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
-with open('./server/scripts/graph.json', 'w') as f:
+with open('graph.json', 'w') as f:
     f.write(fig_json)
