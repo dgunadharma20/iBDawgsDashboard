@@ -59,6 +59,7 @@ const Sidebar = () => {
         "& .pro-menu-item.active": {
           color: "#6870fa !important",
         },
+        height: "100vh",
       }}
     >
       <ProSidebar collapsed={isCollapsed}>
@@ -91,15 +92,6 @@ const Sidebar = () => {
 
           {!isCollapsed && (
             <Box mb="25px">
-              <Box display="flex" justifyContent="center" alignItems="center">
-                <img
-                  alt="profile-user"
-                  width="100px"
-                  height="100px"
-                  src={`../../assets/user.png`}
-                  style={{ cursor: "pointer", borderRadius: "50%" }}
-                />
-              </Box>
               <Box textAlign="center">
                 <Typography
                   variant="h2"
