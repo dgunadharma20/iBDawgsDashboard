@@ -10,6 +10,7 @@ import Gaussian from "./scenes/gaussian";
 import Form from "./scenes/form";
 import Decision from "./scenes/decision";
 import KNeighbors from "./scenes/kneighbors";
+import Business from "./scenes/business"
 import FAQ from "./scenes/faq";
 import RandomForest from "./scenes/randomforest";
 import { CssBaseline, ThemeProvider } from "@mui/material";
@@ -30,6 +31,7 @@ function App() {
             <Topbar setIsSidebar={setIsSidebar} />
             <Routes>
               <Route path="/" element={<Dashboard />} />
+              <Route path="/iBDawgsDashboard" element={<Dashboard />} />
               <Route path="/team" element={<Team />} />
               <Route path="/contacts" element={<Contacts />} />
               <Route path="/invoices" element={<Invoices />} />
@@ -38,6 +40,7 @@ function App() {
               <Route path="/kneighbors" element={<KNeighbors />} />
               <Route path="/decision" element={<Decision />} />
               <Route path="/faq" element={<FAQ />} />
+              <Route path="/business" element={<Business />} />
               <Route path="/calendar" element={<Calendar />} />
               <Route path="/random" element={<RandomForest />} />
             </Routes>
