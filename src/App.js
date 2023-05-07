@@ -16,6 +16,7 @@ import RandomForest from "./scenes/randomforest";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "./theme";
 import Calendar from "./scenes/calendar/calendar";
+import Bar from "./scenes/top10";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -39,6 +40,7 @@ function App() {
               <Route path="/gaussian" element={<Gaussian />} />
               <Route path="/kneighbors" element={<KNeighbors />} />
               <Route path="/decision" element={<Decision />} />
+              <Route path="/top10" element={<Bar />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/business" element={<Business />} />
               <Route path="/calendar" element={<Calendar />} />
