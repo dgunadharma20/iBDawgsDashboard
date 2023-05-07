@@ -150,7 +150,7 @@ const Dashboard = () => {
                 fontWeight="bold"
                 color={colors.greenAccent[500]}
               >
-                USA | JAPAN | CHINA
+                USA | FRANCE | JAPAN
               </Typography>
             </Box>
             <Box>
