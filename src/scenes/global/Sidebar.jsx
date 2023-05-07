@@ -60,6 +60,7 @@ const Sidebar = () => {
           color: "#6870fa !important",
         },
         height: "100vh",
+        position: "fixed",
       }}
     >
       <ProSidebar collapsed={isCollapsed}>
@@ -81,7 +82,7 @@ const Sidebar = () => {
                 ml="15px"
               >
                 <Typography variant="h3" color={colors.grey[100]}>
-                  ADMINIS
+                  iBDAWGS
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
@@ -99,7 +100,7 @@ const Sidebar = () => {
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-                  CyberDawg
+                  CyberDawgs
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
                   DashBoard
