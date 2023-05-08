@@ -24,44 +24,9 @@ const BarChart = ({ isDashboard = false }) => {
   return (
     <ResponsiveBar
       data={data}
-<<<<<<< HEAD
       keys={["value"]}
       indexBy="key"
-      margin={{ top: 50, right: 60, bottom: 60, left: 60 }}
-=======
-      theme={{
-        // added
-        axis: {
-          domain: {
-            line: {
-              stroke: colors.grey[100],
-            },
-          },
-          legend: {
-            text: {
-              fill: colors.grey[100],
-            },
-          },
-          ticks: {
-            line: {
-              stroke: colors.grey[100],
-              strokeWidth: 1,
-            },
-            text: {
-              fill: colors.grey[100],
-            },
-          },
-        },
-        legends: {
-          text: {
-            fill: colors.grey[100],
-          },
-        },
-      }}
-      keys={["DDoS", "DDoS_GoldenEye", "DDoS_Hulk", "DDoS_Slowhttotest", "DDoS_Slowloris", "DDoS_SlowPost"]}
-      indexBy="country"
-      margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
->>>>>>> 24a4df5c9f1bb73090af5f489fce862e3de1ad03
+      margin={{ top: 50, right: 60, bottom: 100, left: 60 }}
       padding={0.3}
       layout="vertical"
       colors={getColor}
@@ -70,14 +35,16 @@ const BarChart = ({ isDashboard = false }) => {
       axisBottom={{
         tickSize: 5,
         tickPadding: 5,
-        tickRotation: 0,
+        tickRotation: 25,
         legend: "Feature",
         legendPosition: "middle",
-        legendOffset: 40,
+        legendOffset: 90,
         format: (value) => value,
         style: {
           fontSize: 12,
-          fill: theme.palette.text.primary, // Added this line
+        },
+        legendTextStyle: {
+          fill: 'white',
         },
       }}
       axisLeft={{
@@ -90,9 +57,12 @@ const BarChart = ({ isDashboard = false }) => {
         format: (value) => `${value}%`,
         style: {
           fontSize: 12,
-          fill: theme.palette.text.primary, // Added this line
+        },
+        legendTextStyle: {
+          fill: 'white',
         },
       }}
+      
       labelSkipWidth={12}
       labelSkipHeight={12}
       role="application"
