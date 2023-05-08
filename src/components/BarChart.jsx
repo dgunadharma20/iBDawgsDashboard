@@ -8,17 +8,42 @@ const BarChart = ({ isDashboard = false }) => {
   // sort the data array in descending order based on the values
   data.sort((a, b) => b.value - a.value);
 
-  const colors = [
-    theme.palette.primary.main,
-    theme.palette.secondary.main,
-    theme.palette.error.main,
-    theme.palette.warning.main,
-    theme.palette.info.main,
-    theme.palette.success.main,
-  ];
+  const colors = [    theme.palette.primary.main,    theme.palette.secondary.main,    theme.palette.error.main,    theme.palette.warning.main,    theme.palette.info.main,    theme.palette.success.main,  ];
 
   const getColor = (bar) => {
     return colors[bar.index % colors.length];
+  };
+
+  const customTheme = {
+    axis: {
+      legend: {
+        text: {
+          fill: "white",
+          fontSize: 12
+        }
+      },
+      ticks: {
+        line: {
+          stroke: "white"
+        },
+        text: {
+          fill: "white",
+          fontSize: 12
+        }
+      }
+    },
+    grid: {
+      line: {
+        stroke: "white",
+        strokeWidth: 1
+      }
+    },
+    labels: {
+      text: {
+        fill: "white",
+        fontSize: 12
+      }
+    }
   };
 
   return (
@@ -42,13 +67,8 @@ const BarChart = ({ isDashboard = false }) => {
         format: (value) => value,
         style: {
           fontSize: 12,
-          text: {
-            fill: 'white'
-          }
-        },
-        legendTextStyle: {
-          fill: 'white',
-        },
+          fill: "white"
+        }
       }}
       axisLeft={{
         tickSize: 5,
@@ -60,18 +80,14 @@ const BarChart = ({ isDashboard = false }) => {
         format: (value) => `${value}%`,
         style: {
           fontSize: 12,
-          text: {
-            fill: 'white'
-          }
-        },
-        legendTextStyle: {
-          fill: 'white',
-        },
+          fill: "white"
+        }
       }}
       labelSkipWidth={12}
       labelSkipHeight={12}
       role="application"
       barAriaLabel={(e) => `${e.data.key}: ${e.data.value}%`}
+      theme={customTheme}
       // other props
     />
   );
