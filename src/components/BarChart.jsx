@@ -42,6 +42,9 @@ const BarChart = ({ isDashboard = false }) => {
         format: (value) => value,
         style: {
           fontSize: 12,
+          text: {
+            fill: 'white'
+          }
         },
         legendTextStyle: {
           fill: 'white',
@@ -57,12 +60,14 @@ const BarChart = ({ isDashboard = false }) => {
         format: (value) => `${value}%`,
         style: {
           fontSize: 12,
+          text: {
+            fill: 'white'
+          }
         },
         legendTextStyle: {
           fill: 'white',
         },
       }}
-      
       labelSkipWidth={12}
       labelSkipHeight={12}
       role="application"
