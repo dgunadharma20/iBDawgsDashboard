@@ -12,8 +12,8 @@ const Gaussian = () => {
     ...graphData.layout,
     title: { text: 'Learning Curve', font: { size: 20 } },
     font: { family: 'Arial', color: 'white' },
-    plot_bgcolor: colors.primary[500],
-    paper_bgcolor: colors.primary[500],
+    plot_bgcolor: colors.primary[400],
+    paper_bgcolor: colors.primary[400],
     margin: { l: 50, r: 50, b: 50, t: 50 },
     width: 500,
     height: 500,
@@ -27,9 +27,9 @@ const Gaussian = () => {
       justifyContent="center"
       alignItems="center"
       minHeight="100vh"
-      backgroundColor={colors.primary[400]}
+      backgroundColor={colors.primary[500]}
     >
-      <Typography color={colors.grey[100]} variant="h4" fontWeight="600" mb={4}  margin-left="auto" margin-right="auto">
+      <Typography color={colors.grey[100]} variant="h2" fontWeight="600" mb={4}  margin-left="auto" margin-right="auto">
         Gaussian Naive Bayes
       </Typography>
       <Box display="flex" justifyContent="center" alignItems="center" gap={4}>
@@ -39,7 +39,7 @@ const Gaussian = () => {
         <Box
           backgroundColor={colors.primary[400]}
           borderRadius="8px"
-          boxShadow="0 4px 6px rgba(0, 0, 0, 0.8)"
+          boxShadow="0 4px 6px rgba(0, 0, 0, 0.2)"
           p={4}
           marginRight={3}
         >
