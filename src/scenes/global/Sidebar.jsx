@@ -134,7 +134,7 @@ const Sidebar = () => {
             />
             <Item
               title="Features"
-              to="/contacts"
+              to="/features"
               icon={<ContactsOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
