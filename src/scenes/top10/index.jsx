@@ -5,7 +5,9 @@ import BarChart from "../../components/BarChart";
 const Bar = () => {
   return (
     <Box m="20px">
-      <Header title="Importances of Top 10 Features from the Given Dataset" />
+      <Header
+        title="TOP 10 FEATURES"
+        subtitle="Top 10 Features from Dataset"/>
       <Box height="75vh">
         <BarChart />
       </Box>

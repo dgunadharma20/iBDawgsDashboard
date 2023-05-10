@@ -46,7 +46,7 @@ const Dashboard = () => {
         gridAutoRows="140px"
         gap="20px"
       >
-        {/* ROW 1 */}
+        {/* ROW 1
         <Box
           gridColumn="span 3"
           backgroundColor={colors.primary[400]}
@@ -122,7 +122,7 @@ const Dashboard = () => {
               />
             }
           />
-        </Box>
+        </Box> */}
 
         {/* ROW 2 */}
         <Box
