@@ -6,6 +6,7 @@ import Dashboard from "./scenes/dashboard";
 import Team from "./scenes/team";
 import Invoices from "./scenes/invoices";
 import Features from "./scenes/features";
+import Map from "./scenes/map";
 import Gaussian from "./scenes/gaussian";
 import Form from "./scenes/form";
 import Decision from "./scenes/decision";
@@ -35,6 +36,7 @@ function App() {
               <Route path="/iBDawgsDashboard" element={<Dashboard />} />
               <Route path="/team" element={<Team />} />
               <Route path="/features" element={<Features />} />
+              <Route path="/map" element={<Map />} />
               <Route path="/invoices" element={<Invoices />} />
               <Route path="/form" element={<Form />} />
               <Route path="/gaussian" element={<Gaussian />} />
