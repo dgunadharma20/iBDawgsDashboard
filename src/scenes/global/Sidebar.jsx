@@ -18,6 +18,7 @@ import PeopleIcon from '@mui/icons-material/People';
 import CheckBoxIcon from '@mui/icons-material/CheckBox';
 import PetsIcon from '@mui/icons-material/Pets';
 import NextWeekIcon from '@mui/icons-material/NextWeek';
+import ReceiptIcon from '@mui/icons-material/Receipt';
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
@@ -140,16 +141,9 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
             <Item
-              title="Geo Map"
-              to="/geomap"
-              icon={<MapOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
               title="Network Traffic Map"
               to="/map"
-              icon={<ReceiptOutlinedIcon />}
+              icon={<ReceiptIcon />}
               selected={selected}
               setSelected={setSelected}
             />

@@ -1,4 +1,3 @@
-import { tokens } from "../theme";
 
 export const mockBarData = [
   { key: "Fwd_Packet_Length_Max", value: 85.4 },

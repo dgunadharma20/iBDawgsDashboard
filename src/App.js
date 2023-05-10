@@ -18,7 +18,6 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "./theme";
 import Calendar from "./scenes/calendar/calendar";
 import Bar from "./scenes/top10";
-import Map from "./scenes/geomap"
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -48,7 +47,6 @@ function App() {
               <Route path="/business" element={<Business />} />
               <Route path="/calendar" element={<Calendar />} />
               <Route path="/random" element={<RandomForest />} />
-              <Route path="/geomap" element={<Map />} />
             </Routes>
           </main>
         </div>

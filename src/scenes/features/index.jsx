@@ -112,7 +112,7 @@ const Features = () => {
           />
         </>
       ),
-      flex: 1,
+      flex: 0.7,
     },
     {
       field: "Bwd_Packet_Length_Min",
@@ -156,7 +156,7 @@ const Features = () => {
     <Box m="20px">
       <Header
         title="FEATURE SELECTION"
-        subtitle="Features from Dataset"
+        subtitle="Features from Dataset (Descriptions in each column name)"
       />
       <Box
         m="40px 0 0 0"
