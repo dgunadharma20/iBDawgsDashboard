@@ -23,7 +23,7 @@ const Dashboard = () => {
       <Box display="flex" justifyContent="space-between" alignItems="center">
         <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
 
-        <Box>
+        {/* <Box>
           <Button
             sx={{
               backgroundColor: colors.blueAccent[700],
@@ -36,7 +36,7 @@ const Dashboard = () => {
             <DownloadOutlinedIcon sx={{ mr: "10px" }} />
             Download Reports
           </Button>
-        </Box>
+        </Box> */}
       </Box>
 
       {/* GRID & CHARTS */}
@@ -46,7 +46,7 @@ const Dashboard = () => {
         gridAutoRows="140px"
         gap="20px"
       >
-        {/* ROW 1 */}
+        {/* ROW 1
         <Box
           gridColumn="span 3"
           backgroundColor={colors.primary[400]}
@@ -55,10 +55,10 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="12,361"
-            subtitle="Emails Sent"
-            progress="0.75"
-            increase="+14%"
+            title="Facebook Traffic"
+            subtitle="North America (2020)"
+            progress="0.77"
+            increase="+22.9%"
             icon={
               <EmailIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
@@ -74,10 +74,10 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="431,225"
-            subtitle="Sales Obtained"
-            progress="0.50"
-            increase="+21%"
+            title="IP Traffic Exabytes"
+            subtitle="Global (2020)"
+            progress=".66"
+            increase="+122"
             icon={
               <PointOfSaleIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
@@ -93,10 +93,10 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="32,441"
-            subtitle="New Clients"
-            progress="0.30"
-            increase="+5%"
+            title="New IoT Devices"
+            subtitle="Global (by 2025)"
+            progress="0.5"
+            increase="75.44 Bn"
             icon={
               <PersonAddIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
@@ -112,17 +112,17 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="1,325,134"
+            title="396,000 Pb"
             subtitle="Traffic Received"
             progress="0.80"
-            increase="+43%"
+            increase="+21%"
             icon={
               <TrafficIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
               />
             }
           />
-        </Box>
+        </Box> */}
 
         {/* ROW 2 */}
         <Box
@@ -143,22 +143,22 @@ const Dashboard = () => {
                 fontWeight="600"
                 color={colors.grey[100]}
               >
-                Revenue Generated
+                Traffic Between Countries
               </Typography>
               <Typography
                 variant="h3"
                 fontWeight="bold"
                 color={colors.greenAccent[500]}
               >
-                $59,342.32
+                USA | FRANCE | JAPAN
               </Typography>
             </Box>
             <Box>
-              <IconButton>
+              {/* <IconButton>
                 <DownloadOutlinedIcon
                   sx={{ fontSize: "26px", color: colors.greenAccent[500] }}
                 />
-              </IconButton>
+              </IconButton> */}
             </Box>
           </Box>
           <Box height="250px" m="-20px 0 0 0">
@@ -180,7 +180,7 @@ const Dashboard = () => {
             p="15px"
           >
             <Typography color={colors.grey[100]} variant="h5" fontWeight="600">
-              Recent Transactions
+              Recent Cyber Attacks
             </Typography>
           </Box>
           {mockTransactions.map((transaction, i) => (
@@ -204,13 +204,15 @@ const Dashboard = () => {
                   {transaction.user}
                 </Typography>
               </Box>
-              <Box color={colors.grey[100]}>{transaction.date}</Box>
+              <Box style={{ "text-align": "left" }} color={colors.grey[100]}>{transaction.date}</Box>
               <Box
                 backgroundColor={colors.greenAccent[500]}
                 p="5px 10px"
                 borderRadius="4px"
               >
-                ${transaction.cost}
+              <a target="_blank" style={{ color: "white", "text-decoration": "none !important" }} href={transaction.cost}>
+                Check
+              </a>
               </Box>
             </Box>
           ))}
@@ -224,7 +226,7 @@ const Dashboard = () => {
           p="30px"
         >
           <Typography variant="h5" fontWeight="600">
-            Campaign
+            Network Taffic Proportion
           </Typography>
           <Box
             display="flex"
@@ -238,9 +240,9 @@ const Dashboard = () => {
               color={colors.greenAccent[500]}
               sx={{ mt: "15px" }}
             >
-              $48,352 revenue generated
+              24.76% proportion
             </Typography>
-            <Typography>Includes extra misc expenditures and costs</Typography>
+            <Typography>In relation to all types of cybersecurity attacks</Typography>
           </Box>
         </Box>
         <Box
@@ -253,7 +255,7 @@ const Dashboard = () => {
             fontWeight="600"
             sx={{ padding: "30px 30px 0 30px" }}
           >
-            Sales Quantity
+            Types of Attacks
           </Typography>
           <Box height="250px" mt="-20px">
             <BarChart isDashboard={true} />
