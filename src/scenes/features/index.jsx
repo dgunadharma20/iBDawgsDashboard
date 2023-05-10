@@ -155,8 +155,8 @@ const Features = () => {
   return (
     <Box m="20px">
       <Header
-        title="Feature Selection"
-        subtitle="List of top 10 features (Descriptions in each column title)"
+        title="FEATURE SELECTION"
+        subtitle="Features from Dataset"
       />
       <Box
         m="40px 0 0 0"

@@ -12,7 +12,7 @@ const Business = () => {
   const colors = tokens(theme.palette.mode);
   return (
     <Box m="20px">
-      <Header title="Business Plan" subtitle="Business Strategy Page" style={{"margin-left": "5px"}}/>
+      <Header title="BUSINESS PLAN" subtitle="Business Strategy Page" style={{"margin-left": "5px"}}/>
 
       <Accordion defaultExpanded>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
