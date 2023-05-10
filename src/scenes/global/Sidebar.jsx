@@ -17,6 +17,7 @@ import NatureIcon from '@mui/icons-material/Nature';
 import PeopleIcon from '@mui/icons-material/People';
 import CheckBoxIcon from '@mui/icons-material/CheckBox';
 import PetsIcon from '@mui/icons-material/Pets';
+import NextWeekIcon from '@mui/icons-material/NextWeek';
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
@@ -231,7 +232,7 @@ const Sidebar = () => {
               <Item
               title="Business Plan"
               to="/business"
-              icon={<PersonOutlinedIcon />}
+              icon={<NextWeekIcon />}
               selected={selected}
               setSelected={setSelected}
             />
