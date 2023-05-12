@@ -113,7 +113,7 @@ const Sidebar = () => {
           <Box paddingLeft={isCollapsed ? undefined : "10%"}>
             <Item
               title="Dashboard"
-              to="/"
+              to="/iBDawgsDashboard"
               icon={<PetsIcon />}
               selected={selected}
               setSelected={setSelected}
