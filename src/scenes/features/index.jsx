@@ -196,6 +196,9 @@ const Features = () => {
           components={{ Toolbar: GridToolbar }}
         />
       </Box>
+      <Box >
+        <p>*This dataset can be downloaded locally for your additional analysis purposes.</p>
+      </Box>
     </Box>
   );
 };

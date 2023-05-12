@@ -11,3 +11,11 @@ export const mockBarData = [
   { key: "Total_Length_of_Fwd_Packets", value: 47.9 },
   { key: "act_data_pkt_fwd", value: 40.9 }
 ];
+
+export const attackData = [
+  { key: "DDoS", value: 59.8 },
+  { key: "DDoS GoldenEye", value: 1.57 },
+  { key: "DDoS Hulk", value: 35.18 },
+  { key: "DDoS Slowhttptest", value: 2.57 },
+  { key: "DDoS slowloris", value: 0.89 }
+];

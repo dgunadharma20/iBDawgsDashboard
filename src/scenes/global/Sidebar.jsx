@@ -4,13 +4,9 @@ import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
 import "react-pro-sidebar/dist/css/styles.css";
 import { tokens } from "../../theme";
-import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
-import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import BarChartOutlinedIcon from "@mui/icons-material/BarChartOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
-import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 import MilitaryTechIcon from '@mui/icons-material/MilitaryTech';
 import ForestIcon from '@mui/icons-material/Forest';
 import NatureIcon from '@mui/icons-material/Nature';
@@ -18,7 +14,8 @@ import PeopleIcon from '@mui/icons-material/People';
 import CheckBoxIcon from '@mui/icons-material/CheckBox';
 import PetsIcon from '@mui/icons-material/Pets';
 import NextWeekIcon from '@mui/icons-material/NextWeek';
-import ReceiptIcon from '@mui/icons-material/Receipt';
+import MapIcon from '@mui/icons-material/Map';
+import CoronavirusIcon from '@mui/icons-material/Coronavirus';
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
@@ -143,7 +140,14 @@ const Sidebar = () => {
             <Item
               title="Network Traffic Map"
               to="/map"
-              icon={<ReceiptIcon />}
+              icon={<MapIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Attack Types"
+              to="/attacktype"
+              icon={<CoronavirusIcon />}
               selected={selected}
               setSelected={setSelected}
             />
